@@ -124,3 +124,16 @@ Customer Portal
 SAP Service Cloud
    ↕
 SAP S/4HANA
+When physical on-site activity is required:
+
+SAP Service Cloud
+      ↓
+Field Service Process
+      ↓
+Dispatcher / Planner
+      ↓
+Field Technician
+      ↓
+Service Result
+      ↓
+SAP Backend / Customer Service Case
