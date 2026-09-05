@@ -148,3 +148,45 @@ SAP Backend / Customer Service Case
 ### SAP Service Cloud
 
 SAP Service Cloud represents the customer-service and case-management layer in the conceptual target landscape.
+
+# Requirement Traceability
+
+A traceability chain was maintained throughout the case study:
+
+```text
+AS-IS Observation
+        ↓
+Fit-Gap Analysis
+        ↓
+Business Requirement
+        ↓
+Functional Requirement
+        ↓
+Jira Story
+        ↓
+Acceptance Criteria
+        ↓
+UAT Test Case
+```
+
+### Example – Case Routing
+
+```text
+Incorrect Case Assignment
+        ↓
+FG-05
+        ↓
+BR-04
+        ↓
+FR-05
+        ↓
+SCSI-9
+        ↓
+Routing Acceptance Criteria
+        ↓
+UAT-02
+```
+
+This ensures that an application or process change remains connected to an identified business need and can later be validated through testing.
+
+---
