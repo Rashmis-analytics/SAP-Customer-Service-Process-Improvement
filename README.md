@@ -137,3 +137,128 @@ Field Technician
 Service Result
       ↓
 SAP Backend / Customer Service Case
+---
+
+## Responsibility Overview
+
+### SAP Service Cloud
+
+SAP Service Cloud represents the customer-service and case-management layer in the conceptual target landscape.
+
+Key responsibilities include:
+
+- Case creation and management
+- Case classification
+- Priority management
+- Rule-based routing
+- Agent processing
+- Customer communication
+- Case status management
+- Field Service coordination where required
+
+### SAP S/4HANA
+
+SAP S/4HANA represents the ERP/backend layer.
+
+Relevant information may include:
+
+- Customer / Business Partner data
+- Product and equipment information
+- Service-related backend information
+- Service orders
+- Billing-related information
+- Other relevant ERP processes
+
+### Field Service
+
+Field Service is used when physical on-site activity is required, such as:
+
+- Inspection
+- Repair
+- Replacement
+- Testing
+- Other technician activities
+
+The dispatcher/planner coordinates technician planning, assignment, scheduling and dispatch.
+
+---
+
+# TO-BE Process
+
+The future-state process introduces several improvements:
+
+- Mandatory service-request information validation
+- Standardized case categories
+- Defined priority rules
+- Rule-based case routing
+- Improved access to relevant customer and equipment information
+- Remote diagnosis before Field Service escalation
+- Defined Field Service decision criteria
+- Standardized Field Service handover
+- Field Service readiness validation
+- Structured technician planning
+- Field Service status visibility
+- Structured service-result feedback
+- Standardized resolution and closure criteria
+- Process KPI monitoring
+
+## TO-BE BPMN
+
+![TO-BE SAP Customer Service Process](04_TO-BE_Process/TO-BE%20SAP%20Customer%20Service%20Process.png)
+
+The TO-BE process was modelled using **SAP Signavio and BPMN**.
+
+---
+
+# Requirements Engineering
+
+The business needs identified during the AS-IS and Fit-Gap Analysis were translated into:
+
+- **Business Requirements (BR)** – what the business needs and why
+- **Functional Requirements (FR)** – what the future process or solution needs to support
+
+### Example
+
+**Business Requirement – BR-04**
+
+Service cases should reach the appropriate responsible Customer Service team.
+
+**Functional Requirement – FR-05**
+
+The solution shall support case routing according to defined business criteria such as case category and service responsibility.
+
+Detailed SAP configuration would be designed and implemented by the appropriate SAP functional and technical teams in a real implementation.
+
+---
+
+# Requirement Traceability
+
+A traceability chain was maintained throughout the case study:
+
+```text
+AS-IS Observation
+        ↓
+Fit-Gap Analysis
+        ↓
+Business Requirement
+        ↓
+Functional Requirement
+        ↓
+Jira Story
+        ↓
+Acceptance Criteria
+        ↓
+UAT Test Case
+Incorrect Case Assignment
+        ↓
+FG-05
+        ↓
+BR-04
+        ↓
+FR-05
+        ↓
+SCSI-9
+        ↓
+Routing Acceptance Criteria
+        ↓
+UAT-02
